@@ -1,0 +1,62 @@
+.carouselContainer {
+  box-sizing: border-box;
+  margin: 6%;
+  padding: 0;
+  position: relative;
+  height: 15em;
+  display: flex;
+  overflow: hidden;
+}
+.carouselImage {
+  min-width: 100%;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.carouselButtonWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background: rgb(0, 0, 0, 0.356);
+  }
+  &_left {
+    left: 0;
+  }
+  &_right {
+    right: 0;
+  }
+}
+.carouselButton {
+  height: 25px;
+}
+.carouselDotWrap {
+  display: flex;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+  > div {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.carouselDot {
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  &_mark {
+    width: 6px;
+    height: 6px;
+    background: whitesmoke;
+  }
+}

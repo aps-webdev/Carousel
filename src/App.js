@@ -1,9 +1,10 @@
 import "./App.css";
+import Carousel from "./component/carousel/carousel.index";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to studiousTribe</h1>
+      <Carousel />
     </div>
   );
 }
